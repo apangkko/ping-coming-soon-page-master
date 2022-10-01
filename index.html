@@ -5,30 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="wrapper">
+  <header>
+    <img src="./images/logo.svg" alt="logo image" class="logo__img">
+  </header>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main class="container">
+    <h1 class="heading"><span>We are launching</span> soon!</h1>
+    <p class="subheading">Subscribe and get notified</p>
+    <form action="" class="sub__form">
+      <div class="email__form">
+        <input type="text" class="email_field" placeholder="Your email address...">
+        <small>please provide a valid email address</small>
+      </div>
+      <button class="btn__submit">Notify Me</button>
+    </form>
+    <img class="sub__img" src="./images/illustration-dashboard.png" alt="dashboard illustration">
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <ul class="sic__list">
+      <a href="#" class="sic__item"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+      <a href="#" class="sic__item"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+      <a href="#" class="sic__item"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+    </ul>
+    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
