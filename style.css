@@ -103,6 +103,7 @@ header {
 }
 
 .btn__submit {
+    cursor: pointer;
     width: 100%;
     background-color: var(--clr-primary-400);
     border: 0;
