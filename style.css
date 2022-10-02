@@ -114,6 +114,11 @@ header {
     font-size: 1rem;
     font-weight: 600;
     padding: 1em;
+    transition: .3s ease;
+}
+
+.btn__submit:hover {
+    opacity: .75;
 }
 
 .sub__img {
